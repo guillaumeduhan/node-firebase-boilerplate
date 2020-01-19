@@ -1,6 +1,6 @@
 # Node Firebase Boilerplate.
 
-![Node-Firebase-Boilerplate](https://myhappyagency.com/blog/wp-content/uploads/2020/01/node-Firebase.png)
+![Node-Firebase-Boilerplate](https://myhappyagency.com/blog/wp-content/uploads/2020/01/node-firebase.png)
 
 Minimalist, simple boilerplate for Node & Firebase.js.
 
