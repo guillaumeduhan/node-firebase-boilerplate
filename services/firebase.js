@@ -10,7 +10,7 @@ const admin = require('firebase-admin')
  */
 const serviceAccount = require('../serviceAccountKey.json')
 
-exports.firebase = () => {
+exports.init = () => {
   /*
      * Init your firebase app
      */
