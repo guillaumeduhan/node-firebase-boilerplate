@@ -1,4 +1,4 @@
-# Node Firebase Boilerplate.
+# Node, Express, Firebase boilerplate
 
 ![Node-Firebase-Boilerplate](https://myhappyagency.com/blog/wp-content/uploads/2020/01/node-firebase.png)
 
@@ -18,7 +18,7 @@ npm run start
 ## Built With
 
 * [Node](https://nodejs.org) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-* [Firebase](https://Firebasejs.com/) - Firebase is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+* [Firebase](https://firebase.google.com/) - Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business.
 
 ## Version
 
