@@ -33,3 +33,15 @@ exports.delete = async (uid) => {
     return false
   });
 }
+
+exports.find = async (uid) => {
+  return admin
+  .auth()
+  .getUser(uid)
+  .then(function(userRecord) {
+    return userRecord
+  })
+  .catch(function(error) {
+    return false
+  })
+}
