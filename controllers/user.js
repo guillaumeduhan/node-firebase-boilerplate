@@ -20,3 +20,16 @@ exports.create = async (payload) => {
   .catch(function(error) {
     return false
   })
+}
+
+exports.delete = async (uid) => {
+  return admin
+  .auth()
+  .deleteUser(uid)
+  .then(function(userRecord) {
+    return userRecord
+  })
+  .catch(function(error) {
+    return false
+  });
+}
