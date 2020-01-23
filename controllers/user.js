@@ -62,3 +62,17 @@ exports.update = async (uid, payload) => {
     return false
   })
 }
+
+exports.get = async (payload) => {
+  return _.forEach(payload.users, (user) => {
+      admin
+      .auth()
+      .getUser(user)
+      .then(function(userRecord) {
+        return userRecord.toJSON()
+      })
+      .catch(function(error) {
+        return false
+      });
+  })
+}
