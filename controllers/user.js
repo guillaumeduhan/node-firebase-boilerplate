@@ -45,3 +45,20 @@ exports.find = async (uid) => {
     return false
   })
 }
+
+exports.update = async (uid, payload) => {
+  return admin
+  .auth()
+  .updateUser(uid, {
+    disabled: payload.disabled,
+    emailVerified: payload.emailVerified,
+    email: payload.email,
+    password: payload.password,
+  })
+  .then(function(userRecord) {
+    return userRecord.toJSON()
+  })
+  .catch(function(error) {
+    return false
+  })
+}
