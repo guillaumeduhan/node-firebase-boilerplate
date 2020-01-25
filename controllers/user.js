@@ -5,7 +5,6 @@
 'use strict'
 
 const admin = require('firebase-admin')
-const _ = require('lodash')
 
 exports.create = async (payload) => {
   return admin
@@ -60,19 +59,5 @@ exports.update = async (uid, payload) => {
   })
   .catch(function(error) {
     return false
-  })
-}
-
-exports.get = async (payload) => {
-  return _.forEach(payload.users, (user) => {
-      admin
-      .auth()
-      .getUser(user)
-      .then(function(userRecord) {
-        return userRecord.toJSON()
-      })
-      .catch(function(error) {
-        return false
-      });
   })
 }
